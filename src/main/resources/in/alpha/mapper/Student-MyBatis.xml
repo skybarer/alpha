@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Student">
+
+    <insert id="Insert" parameterType="map">
+        INSERT INTO student.studentDetails (id, name, department, college)
+        VALUES (#{p.id}, #{p.name}, #{p.department}, #{p.college})
+    </insert>
+
+</mapper>
